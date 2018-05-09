@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Left click
+if [[ "${BLOCK_BUTTON}" -eq 1 ]]; then
+  setxkbmap es
+# Right click
+elif [[ "${BLOCK_BUTTON}" -eq 3 ]]; then
+  setxkbmap us
+fi
+pene=$(setxkbmap -query | tail -n 1 | grep -wo us)
+
+if [[ "${pene}" == "us" ]]; then
+  echo "US"
+else
+  echo "ES"
+fi

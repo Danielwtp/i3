@@ -34,7 +34,7 @@ bindsym $mod+k ./~/padfix.sh
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec gnome-terminal
+bindsym $mod+Return exec terminator
 
 # kill focused window
 bindsym $mod+BackSpace kill
